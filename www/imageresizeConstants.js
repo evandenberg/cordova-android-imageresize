@@ -1,5 +1,5 @@
 /*global module,window,cordova,require */
-cordova.define("nl.creativeskills.cordova.imageresize.ImageResize", function(require, exports, module) { /*
+cordova.define("nl.creativeskills.cordova.imageresize.ImageResizer", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file

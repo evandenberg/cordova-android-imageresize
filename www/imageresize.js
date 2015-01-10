@@ -10,6 +10,7 @@
  */
 var cordova = require('cordova'),
     exec = require('cordova/exec'),
+    ImageResizerConst = require('./ImageResizer');
     imageResizer;
 
 (function () {
@@ -19,13 +20,13 @@ var cordova = require('cordova'),
 
     };
 
-    ImageResizer.IMAGE_DATA_TYPE_BASE64 = "base64Image";
-    ImageResizer.IMAGE_DATA_TYPE_URL = "urlImage";
-    ImageResizer.RESIZE_TYPE_FACTOR = "factorResize";
-    ImageResizer.RESIZE_TYPE_PIXEL = "pixelResize";
-    ImageResizer.FORMAT_JPG = "jpg";
-    ImageResizer.FORMAT_PNG = "png";
-    ImageResizer.FORMAT_PDF = "pdf";
+    ImageResizerConst.IMAGE_DATA_TYPE_BASE64 = "base64Image";
+    ImageResizerConst.IMAGE_DATA_TYPE_URL = "urlImage";
+    ImageResizerConst.RESIZE_TYPE_FACTOR = "factorResize";
+    ImageResizerConst.RESIZE_TYPE_PIXEL = "pixelResize";
+    ImageResizerConst.FORMAT_JPG = "jpg";
+    ImageResizerConst.FORMAT_PNG = "png";
+    ImageResizerConst.FORMAT_PDF = "pdf";
 
     /**
      * Resize an image
@@ -55,7 +56,7 @@ var cordova = require('cordova'),
             width : width,
             height : height,
             format : options.format,
-            imageDataType : options.imageDataType || this.IMAGE_DATA_TYPE_BASE64,
+            imageDataType : options.imageDataType || ImageResizerConst.IMAGE_DATA_TYPE_BASE64,
             filename : options.filename || '',
             directory : options.directory || '',
             resizeType : options.resizeType,
@@ -140,7 +141,7 @@ var cordova = require('cordova'),
                 "storePDF", [params]);
     };
 
-    imageResizer = new window.ImageResizer();
+    imageResizer = new ImageResizer();
 
     module.exports = imageResizer;
 
