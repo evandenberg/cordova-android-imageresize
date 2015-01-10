@@ -20,14 +20,6 @@ var cordova = require('cordova'),
 
     };
 
-    ImageResizerConst.IMAGE_DATA_TYPE_BASE64 = "base64Image";
-    ImageResizerConst.IMAGE_DATA_TYPE_URL = "urlImage";
-    ImageResizerConst.RESIZE_TYPE_FACTOR = "factorResize";
-    ImageResizerConst.RESIZE_TYPE_PIXEL = "pixelResize";
-    ImageResizerConst.FORMAT_JPG = "jpg";
-    ImageResizerConst.FORMAT_PNG = "png";
-    ImageResizerConst.FORMAT_PDF = "pdf";
-
     /**
      * Resize an image
      * @param success success callback, will receive the data sent from the native plugin
