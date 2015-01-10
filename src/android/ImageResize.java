@@ -36,7 +36,7 @@ import android.os.Environment;
 import android.util.Base64;
 
 public class ImageResize extends CordovaPlugin {
-	private static final String TAG = "ImageResizePlugin";
+	private static final String TAG = "ImageResize";
 
 	public static String IMAGE_DATA_TYPE_BASE64 = "base64Image";
 	public static String IMAGE_DATA_TYPE_URL = "urlImage";
