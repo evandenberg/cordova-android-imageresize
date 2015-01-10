@@ -1,5 +1,5 @@
 /*global module,window,cordova,require */
-cordova.define("nl.creativeskills.cordova.imageresize.ImageResizer", function(require, exports, module) { /*
+cordova.define("nl.creativeskills.cordova.imageresize.ImageResizeConstants", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -21,15 +21,13 @@ cordova.define("nl.creativeskills.cordova.imageresize.ImageResizer", function(re
 */
 
 module.exports = {
-    ImageResizer: {
-        IMAGE_DATA_TYPE_BASE64: "base64Image",
-        IMAGE_DATA_TYPE_URL: "urlImage",
-        RESIZE_TYPE_FACTOR: "factorResize",
-        RESIZE_TYPE_PIXEL: "pixelResize",
-        FORMAT_JPG: "jpg",
-        FORMAT_PNG: "png",
-        FORMAT_PDF: "pdf"
-    }
+    IMAGE_DATA_TYPE_BASE64: "base64Image",
+    IMAGE_DATA_TYPE_URL: "urlImage",
+    RESIZE_TYPE_FACTOR: "factorResize",
+    RESIZE_TYPE_PIXEL: "pixelResize",
+    FORMAT_JPG: "jpg",
+    FORMAT_PNG: "png",
+    FORMAT_PDF: "pdf"
 };
 
 });

@@ -10,7 +10,7 @@
  */
 var cordova = require('cordova'),
     exec = require('cordova/exec'),
-    ImageResizerConst = require('./ImageResizer'),
+    ImageResizerConst = require('./ImageResizeConstants'),
     imageResizer;
 
 (function () {
