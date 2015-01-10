@@ -30,6 +30,9 @@
     <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-camera.git</repo>
     <issue></issue>
 
+    <js-module src="www/ImageResizeConstants.js" name="ImageResize">
+        <clobbers target="ImageResize" />
+    </js-module>
     <js-module src="www/ImageResize.js" name="ImageResize">
         <clobbers target="ImageResize" />
     </js-module>

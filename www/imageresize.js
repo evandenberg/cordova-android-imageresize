@@ -10,13 +10,12 @@
  */
 var cordova = require('cordova'),
     exec = require('cordova/exec'),
-    imageResizer,
-    ImageResizer;
+    imageResizer;
 
 (function () {
     'use strict';
 
-    ImageResizer = function() {
+    var ImageResizer = function() {
 
     };
 
@@ -141,7 +140,7 @@ var cordova = require('cordova'),
                 "storePDF", [params]);
     };
 
-    imageResizer = new ImageResizer();
+    imageResizer = new window.ImageResizer();
 
     module.exports = imageResizer;
 
