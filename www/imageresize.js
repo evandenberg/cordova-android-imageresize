@@ -10,13 +10,13 @@
  */
 var cordova = require('cordova'),
     exec = require('cordova/exec'),
-    ImageResizerConst = require('./ImageResizer');
+    ImageResizerConst = require('./ImageResizer'),
     imageResizer;
 
 (function () {
     'use strict';
 
-    var ImageResizer = function() {
+    var ImageResize = function() {
 
     };
 
@@ -45,7 +45,7 @@ var cordova = require('cordova'),
      *              height : height of the resized image
      *              width: width of the resized image
      */
-    ImageResizer.prototype.resizeImage = function(success, fail, imageData, width,
+    ImageResize.prototype.resizeImage = function(success, fail, imageData, width,
             height, options) {
         if (!options) {
             options = {};
@@ -76,7 +76,7 @@ var cordova = require('cordova'),
      *              height : height of the image
      *              width: width of the image
      */
-    ImageResizer.prototype.getImageSize = function(success, fail, imageData,
+    ImageResize.prototype.getImageSize = function(success, fail, imageData,
             options) {
         if (!options) {
             options = {};
@@ -105,7 +105,7 @@ var cordova = require('cordova'),
      * @returns JSON Object with the following parameters:
      *              url : URL of the file just stored
      */
-    ImageResizer.prototype.storeImage = function(success, fail, imageData, options) {
+    ImageResize.prototype.storeImage = function(success, fail, imageData, options) {
         if (!options) {
             options = {};
         }
@@ -123,7 +123,7 @@ var cordova = require('cordova'),
                 "storeImage", [params]);
     };
 
-    ImageResizer.prototype.storePDF = function(success, fail, imageData, options) {
+    ImageResize.prototype.storePDF = function(success, fail, imageData, options) {
         if (!options) {
             options = {};
         }
@@ -141,7 +141,7 @@ var cordova = require('cordova'),
                 "storePDF", [params]);
     };
 
-    imageResizer = new ImageResizer();
+    imageResizer = new ImageResize();
 
     module.exports = imageResizer;
 
