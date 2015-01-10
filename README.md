@@ -1,2 +1,3 @@
-# cordova-android-imageresize
+# nl.creativeskills.cordova.imageresize
+
 Cordova plugin to resize images
